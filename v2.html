@@ -643,6 +643,16 @@ a {
  #phonespeak-content-v2 .ps13-glass-panel{background:linear-gradient(#ffffff73 0%,#f2f4f6ed 44%,#f2f4f6 70%)}#phonespeak-content-v2 .ps13-features{padding-top:9.55vw;padding-bottom:9.3vw}#phonespeak-content-v2 .ps13-feature-grid{margin-top:7.19vw}.v2 #phonespeak-content-v2 .ps13-glass-panel{background:linear-gradient(#f2f4f6c2 0%,#f2f4f6 25%)}#phonespeak-after-v2 .ps13-business-card{background:linear-gradient(101.936deg,#2341ff 31.929%,#000339 39.659%,#00104f 93.071%,#5e2dff 150.36%)}
  #pricing-table-main2 .pricing-tab-header{width:82.02vw}#pricing-table-main2 .pricing-tab-link{padding:3vw 0;font-size:3.8vw}#phonespeak-common-sections #pricing-table-main2{padding-bottom:4vw}.plan-scale{max-width:none}.sample-floating-cta{width:86vw;padding:4.4vw 2vw;border-radius:6vw;font-size:4.5vw}.sample-floating-cta span{font-size:6vw;vertical-align:-.3vw;margin-left:1.4vw}
 }
+/* Keep the desktop composition at its Figma size, including on wide monitors.
+   Backgrounds keep their own full-width scale; compact windows also fit vertically. */
+@media(min-width:768px){
+ body{--desktop-unit:min(1px,calc(100vw / 1440),calc(100svh / 795));--u:var(--desktop-unit)}
+ .sample-nav{--u:min(1px,calc(100vw / 1440));width:calc(100% - clamp(32px,7.06vw,102px))}
+ .hero-photo-plane{--u:calc(100vw / 1440)}
+ .hero-photo{top:calc(-39 * var(--u) + 400 * (var(--desktop-unit) - var(--u)))}
+ .phone-track{bottom:0}
+ .showcase-phone{top:calc(var(--u)*112)}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-aurora:before{animation:none}.hero-line-parallax,.hero-photo{transform:none!important;will-change:auto}.showcase-labels span{transition:none}*{scroll-behavior:auto!important}}
 .plan-choice-banner p,.chart-note p{font:inherit;white-space:nowrap;letter-spacing:inherit}.ps13-answer p{font:inherit!important}.hero-title .hero-highlight{letter-spacing:inherit}.hero-title span{word-break:keep-all}.sample-demo-toast{font-family:inherit;font-size:14px;font-weight:600;line-height:1.5}
 /* Keep divider artwork within each FAQ row at every breakpoint. */
