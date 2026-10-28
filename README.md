@@ -1,15 +1,11 @@
-# Phone Speak — Mobile Design Samples
+# Phone Speak — Responsive Design Samples
 
-Two mobile landing-page prototypes for visual review.
+Two responsive landing-page prototypes for visual review. Open v1.html or v2.html on mobile or desktop; the layout adapts to the window width.
 
-- `index.html`: comparison page
-- `v1.html`: line and animated-gradient concept
-- `v2.html`: photographic concept
+- Version 1: animated gradient and scroll-responsive line. On desktop the same playing phone continues into the next introduction section.
+- Version 2: scroll-responsive photograph and muted inline app video.
+- Shared plan comparison, learning video tabs, FAQ, and expandable details.
 
-This is a design preview, not the production service or a checkout.
-Purchase links have been removed; purchase interactions only show a demo notice.
-Existing Webflow pages are not modified by this repository.
+Purchase links are disabled and only show a sample notice. These are preview pages, not the production service. No Webflow pages are modified.
 
-The first-screen assets and muted video are embedded in each HTML file.
-Lower-page media and fonts load from public CDNs and require internet access.
-Desktop browsers display the mobile composition, up to 480 px wide.
+Hero assets, primary icons and fonts are embedded. Lower-page videos and images load from public CDNs. Internet access is required. Browser power-saving settings may require tapping a video to play.
