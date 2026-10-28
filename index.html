@@ -9,7 +9,7 @@
   <style>
     *{box-sizing:border-box}
     body{margin:0;background:#edf0f5;color:#00143c;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    .cards{max-width:1160px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:40px 24px}
+    .cards{max-width:1700px;margin:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:40px 24px}
     .card{padding:28px;background:#fff;border:1px solid #e1e6ee;border-radius:24px;min-width:0}
     h2{font-size:19px;line-height:1.4;margin:0 0 10px;font-weight:650;letter-spacing:-.02em}
     h2 a{color:inherit;text-decoration:none}
@@ -18,7 +18,7 @@
     p{font-size:14px;line-height:1.6;margin:0;color:#627086;min-height:45px;max-width:440px}
     .frame{margin:24px auto 0;width:100%;max-width:350px;height:650px;border:1px solid #e1e6ee;overflow:hidden;border-radius:20px}
     iframe{display:block;width:100%;height:100%;border:0;background:#f2f4f6}
-    @media(max-width:700px){.cards{grid-template-columns:1fr;padding:20px 16px;gap:20px}.card{padding:22px 18px}h2{font-size:18px}p{min-height:0}.frame{height:600px}}
+    @media(max-width:1000px){.cards{grid-template-columns:1fr;padding:20px 16px;gap:20px}.card{padding:22px 18px}h2{font-size:18px}p{min-height:0}.frame{height:600px}}
   </style>
 </head>
 <body>
@@ -32,6 +32,11 @@
       <h2><a href="v2.html">Version 2 · Person + phone mockup</a></h2>
       <p>Closely follows the creative assets and layout of previous high-performing ads.</p>
       <div class="frame"><iframe src="v2.html" title="Version 2 mobile preview" allow="autoplay" loading="lazy"></iframe></div>
+    </article>
+    <article class="card">
+      <h2><a href="v3.html">Version 3 · Speech bubbles</a></h2>
+      <p>Uses conversation bubbles instead of a phone mockup to bring the main message to life and clearly convey the phone-based English learning experience.</p>
+      <div class="frame"><iframe src="v3.html" title="Version 3 mobile preview" allow="autoplay" loading="lazy"></iframe></div>
     </article>
   </main>
 </body>
